@@ -151,4 +151,40 @@
   .csvg-digit[data-tad-bind=seconds] .csvg-digit-number{
     color:#ee5486
 }
-  
+
+.nav-primary a {
+  position: relative;
+}
+.nav-primary a:after {
+  position: absolute;
+  left: 120%;
+  display: block;
+  height: 2px;
+  width: 100%;
+  --tw-translate-x: -50%;
+  transform: var(--tw-transform);
+  background-color: rgb(100 221 13);
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  content: "";
+  transition-duration: 0.2s;
+}
+.nav-primary a:hover:after {
+  width: 1rem;
+  content: "";
+  opacity: 1;
+}
+.navbar-affix {
+  border-bottom-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding: 0.5rem 1rem;
+}
+.dark .navbar-affix {
+  --tw-border-opacity: 1;
+  border-color: rgba(55, 65, 81, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}

@@ -9,6 +9,7 @@ import {
   StyledNavbar,
   StyledNavLinks,
 } from "../styles/Navbar.styled";
+
 import logo from "../../assets/logo.svg";
 import { animateScroll as scroll } from "react-scroll";
 import MobileMenu from "./MobileMenu";
@@ -37,8 +38,8 @@ const Navbar = () => {
   };
 
   return (
-    <StyledNavbar className={stickyNav ? "sticky" : ""}>
-      <div>
+    <StyledNavbar className={stickyNav ? "sticky" : ""} >
+      <div >
         <NavLogo to="/" onClick={toTop} src={logo} alt="logo" />
       </div>
       <NavMenuList>

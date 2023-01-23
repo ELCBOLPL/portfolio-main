@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledButton } from "../styles/Button.styled";
 import {
   Name,
@@ -16,12 +15,11 @@ import { IconContext } from "react-icons";
 import { GrLinkedinOption } from "react-icons/gr";
 import { GoMarkGithub } from "react-icons/go";
 import { FaEnvelope } from "react-icons/fa";
-import CountdownTimer from '../Clock/CountdownTimer';
+// import { transform } from "framer-motion/";
 
 const Home = () => {
-  const THREE_DAYS_IN_MS = 205 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
+
   return (
     <IconContext.Provider value={{ size: "1rem" }}>
       <StyledHome id="home">
@@ -91,8 +89,10 @@ const Home = () => {
           </Social>
         </Socials>
         
-          <CountdownTimer targetDate={dateTimeAfterThreeDays} />
         
+        
+        {/* <iframe id="online-alarm-kur-iframe" src="https://embed-countdown.onlinealarmkur.com/en/#2023-08-10T06:00:00@America%2FMexico_City" style={{width: "480",height: "80",backgroundColor: "transparent",display: "block",margin: "0px auto",border: "0"}}></iframe> */}
+
       </StyledHome>
     </IconContext.Provider>
   );

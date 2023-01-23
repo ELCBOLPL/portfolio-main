@@ -1,6 +1,5 @@
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
-import { MapContainer,TileLayer} from 'react-leaflet';
 // import L from 'leaflet';
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -32,13 +31,6 @@ function App() {
             <GlobalStyles />
             <Navbar />
             <Home />
-            {/* <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <LeafletGeocoder/>
-    </MapContainer> */}
             <Projects />
             <About />
             <ParallaxComponent />

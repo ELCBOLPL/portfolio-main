@@ -32,47 +32,40 @@ const Footer = () => {
 
       <FooterBigLinkContainer>
         <FooterBigLink
-          href="mailto:jerichobantiquete@gmail.com"
-          data-hover="Let's talk!"
+          href="mailto:elcbolpl@gmail.com"
+          data-hover="Charlemos!"
         >
-          Necesitas cotizar con nosotros?
+          Esperamos tu confirmación?
         </FooterBigLink>
       </FooterBigLinkContainer>
       <FooterContacts>
         <FooterContact>
-          <ContactHeader>Call me</ContactHeader>
-          <ContactLink href="tel:+639951076206">+639951076206</ContactLink>
+          <ContactHeader>Llamame</ContactHeader>
+          <ContactLink href="tel:+8183120575">+8183120575</ContactLink>
         </FooterContact>
         <FooterContact>
           <ContactHeader>Social</ContactHeader>{" "}
           <FooterSocials>
             <ContactLink
-              href="https://github.com/monciego"
+              href="https://github.com/elcbolpl"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </ContactLink>
             <ContactLink
-              href="https://www.linkedin.com/in/jericho-bantiquete-450541179/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
             </ContactLink>
-            <ContactLink
-              href="https://www.instagram.com/monciego/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </ContactLink>
           </FooterSocials>
         </FooterContact>
         <FooterContact>
-          <ContactHeader>Let's grab a coffee.</ContactHeader>
-          <ContactLink href="tel:+639951076206">
-            jerichobantiquete@gmail.com
+          <ContactHeader>correo.</ContactHeader>
+          <ContactLink href="tel:+8183120575">
+            elcbolpl@gmail.com
           </ContactLink>
         </FooterContact>
       </FooterContacts>

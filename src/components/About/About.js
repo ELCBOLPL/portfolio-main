@@ -16,7 +16,7 @@ const Nosotros = () => {
   return (
     <StyledAbout id="about">
       <SectionHeading dark="true" mb="3rem">
-        <SectionTitle dark="true">
+        <SectionTitle dark="true" >
           Nosotros
         </SectionTitle>
       </SectionHeading>
