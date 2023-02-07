@@ -1,10 +1,7 @@
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
-// import L from 'leaflet';
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
-// import "leaflet-control-geocoder/dist/Control.Geocoder.css";
-// import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 import Projects from "./components/Projects/Projects";
 import GlobalStyles from "./components/styles/Global";
 import { ThemeProvider } from "styled-components";
@@ -13,29 +10,38 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ParallaxComponent from "./components/Parallax/Parallax";
 import Technologies from "./components/Technologies/Technologies";
 import Hero from "./components/Hero/Hero";
-// import CountdownTimer from './components/Clock/CountdownTimer';
 import './App.css';
-// import LeafletGeocoder from "../src/components/LeafletGeocoder";
-// import leafletControlGeocoder from 'leaflet-control-geocoder'
-// import leafletControlGeocoder from 'leaflet-control-geocoder'
+import './index.css';
+// import ContactForm from "./components/Contact/ContactForm";
+// import getRemainTime from "./components/countdown";
+import React from "react";
+import Confetti from "./components/hooks/confetti";
+
+// import {SliderData} from "./components/hooks/SliderData";
+// import styled from "styled-components";
+import SliderV1 from "./components/SliderV1";
+
 function App() {
-  // const THREE_DAYS_IN_MS = 205 * 24 * 60 * 60 * 1000;
-  // const NOW_IN_MS = new Date().getTime();
-  // const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-  // const position = [25.782230,  -100.237325]
+
   return (
       <Router>
         <ThemeProvider theme={theme}>
           <>
-          
+         
             <GlobalStyles />
             <Navbar />
+            <Confetti/>
             <Home />
+            
+          
             <Projects />
+            
             <About />
             <ParallaxComponent />
             <Technologies />
-            <Hero/>
+            <Hero/> 
+            
+            <SliderV1/>
             <Footer />
           </>
         </ThemeProvider>
@@ -49,3 +55,4 @@ function App() {
 // });
 // L.Marker.prototype.options.icon = defaultIcon;
 export default App;
+

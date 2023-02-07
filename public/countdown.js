@@ -1,4 +1,4 @@
-    const getRemainTime = deadline => {
+const getRemainTime = deadline => {
     let now = new Date(),
     remainTime = (new Date(deadline) - now + 1000) / 1000,
     remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
@@ -18,7 +18,7 @@
 
     const timerUpdate = setInterval(() => {
         let t = getRemainTime(deadline);
-        el.innerHTML = `${t.remainDays}dias:${t.remainHours}horas:${t.remainMinutes}minutos:${t.remainSeconds}s`;
+        el.innerHTML = `${t.remainDays}días:${t.remainHours}h:${t.remainMinutes}min:${t.remainSeconds}s`;
         if (t.remainTime <= 1) {
             clearInterval(timerUpdate);
             el.innerHTML = finalMessage;
@@ -27,8 +27,3 @@
 }
 
 countdown(`August 10 2023 21:34:40 GMT-0500`, 'clock', '¡Ya empezó!');
-
-
-
-
- 

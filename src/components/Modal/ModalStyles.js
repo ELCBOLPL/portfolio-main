@@ -16,8 +16,8 @@ export const Background = styled(motion.div)`
 `;
 
 export const ModalWrapper = styled(motion.div)`
-	width: clamp(200px, 90vw, 500px);
-	height: 90vh;
+	width: 470px;
+	height: 545px;
 	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
 	background: #fff;
 	color: #000;
@@ -31,6 +31,7 @@ export const ModalWrapper = styled(motion.div)`
 export const CloseModalButton = styled(MdClose)`
 	cursor: pointer;
 	position: absolute;
+	background-color: transparent;
 	top: 0px;
 	right: 30px;
 	width: 32px;
@@ -38,3 +39,5 @@ export const CloseModalButton = styled(MdClose)`
 	padding: 0;
 	z-index: 10;
 `;
+
+

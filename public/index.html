@@ -6,19 +6,47 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <title>Jericho Bantiquete</title>
+    <style>
+      div.example {
+        background-color: darkgrey;background-image: conic-gradient(#0d0e0e, #0d0e0e, #232323);; position: right ;margin-top: 10px;font-size: 40px;
+        color: #f1f1f1;
+        text-transform: capitalize;
+        
+      }
+      
+      @media screen and (min-width: 601px) {
+        div.example {
+          font-size: 60px;
+           background-color: darkgrey;background-image: conic-gradient(#0d0e0e, #0d0e0e, #232323);; position: right ;margin-top: 10px;font-size: 40px;
+        color: #f1f1f1;
+        text-transform: capitalize;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        div.example {
+          background: hsl(0,100%,20%);
+          color: #fff;
+	        font-family: 'Times New Roman', Times, serif;
+          font-size: 5vh;
+	        align-items: center;
+	        justify-content: center;
+	        min-height: 20vh;
+	        animation: countdown 5s linear infinite;
+          
+          /* margin-right: 40px; */
+        }
+      }
+      </style>
+   
   </head>
   <body>
     
     <main id="root"></main>
-    <h1 style=" background-color: darkgrey;background-image: conic-gradient(#0d0e0e, #0d0e0e, #232323);; position: right ;margin-top: 10px;font-size: 40px;
-    margin: 0 0 5px;
-    font-size: 70px;
-    font-weight: 600;
-    color: #f1f1f1;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;"> La Boda comienza en <span id = 'clock'></span></h1>
+    
+    <div class="example">
+     La Boda comienza en <span class="" id =  'clock'></span>
+    </div>
     <script src="countdown.js"></script>
 
     </html>

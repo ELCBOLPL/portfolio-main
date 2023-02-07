@@ -15,6 +15,7 @@ import { IconContext } from "react-icons";
 import { GrLinkedinOption } from "react-icons/gr";
 import { GoMarkGithub } from "react-icons/go";
 import { FaEnvelope } from "react-icons/fa";
+// import { countdown } from "../Form/countdown";
 // import { transform } from "framer-motion/";
 
 const Home = () => {
@@ -88,13 +89,11 @@ const Home = () => {
             <GrLinkedinOption />
           </Social>
         </Socials>
-        
-        
-        
-        {/* <iframe id="online-alarm-kur-iframe" src="https://embed-countdown.onlinealarmkur.com/en/#2023-08-10T06:00:00@America%2FMexico_City" style={{width: "480",height: "80",backgroundColor: "transparent",display: "block",margin: "0px auto",border: "0"}}></iframe> */}
-
+                
       </StyledHome>
+      
     </IconContext.Provider>
+    
   );
 };
 
