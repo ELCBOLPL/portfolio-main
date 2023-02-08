@@ -129,18 +129,18 @@ export const ButtonWrapper = styled.div`
 	top: 0;
 `;
 
-export const HeroButton = styled(motion.span)`
+export const HeroButton = styled(motion.button)`
 	position: absolute;
 	width: 250px;
 	margin: 0 auto;
-	padding: 15px 10px;
+	padding: 15px 20px;
 	bottom: calc(100vh - 100px);
 	right: 50%;
 	transform: translate(50%);
 	font-weight: 700;
 	font-size: 0.688rem;
 	line-height: 18px;
-	letter-spacing: 4.54px;
+	letter-spacing: 1.54px;
 	text-transform: uppercase;
 	border-radius: 25px;
 	border: none;

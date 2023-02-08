@@ -5,7 +5,7 @@ export const StyledNavbar = styled.nav`
   position: absolute;
   left: 0;
   right: 0;
-  top: --10;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@ export const StyledNavLinks = styled(NavLink)`
     width: 0;
     transform: scaleX(1);
     height: 0.0625rem;
-    background-color: rgb(100 221 13);
+    background: ${({ theme }) => theme.backgroundColor.orange};
     transition: 0.3s ease-in-out;
   }
 
@@ -77,11 +77,7 @@ export const StyledNavLinks = styled(NavLink)`
   }
 
   &.active {
-    --tw-text-opacity: 1;
-    color: rgba(243,244,246,var(--tw-text-opacity));
-}
-
-
+    color: ${({ theme }) => theme.color.light};
   }
 
   &.active::after {
@@ -91,9 +87,9 @@ export const StyledNavLinks = styled(NavLink)`
     right: 0;
     left: 0;
     width: 100%;
-    transform: scaleX(.5);
+    transform: scaleX(1);
     height: 0.0625rem;
-    background-color: rgb(100 221 13);
+    background: ${({ theme }) => theme.backgroundColor.orange};
     transition: 0.3s ease-in-out;
   }
 `;

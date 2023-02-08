@@ -21,19 +21,19 @@ const MobileMenu = ({ isOpen, toggle }) => {
       </Icon>
       <MobileMenuList>
         <MobileMenuLink to="home" onClick={toggle}>
-          Inicio
+          Home
         </MobileMenuLink>
         <MobileMenuLink to="projects" onClick={toggle}>
-          Ubicaciones
+          Projects
         </MobileMenuLink>
         <MobileMenuLink to="about" onClick={toggle}>
-          Nosotros
+          About
         </MobileMenuLink>
         {/* <MobileMenuLink to="playground" onClick={toggle}>
           Playground
         </MobileMenuLink> */}
         <MobileButton
-          href="elcbolpl@gmail.com "
+          href="mailto:jerichobantiquete@gmail.com "
           target="_blank"
           rel="noreferrer"
         >
@@ -55,14 +55,14 @@ const MobileMenu = ({ isOpen, toggle }) => {
       </MobileMenuList>
       <MobileSocials>
         <MobileSocial
-          href="mailto:elcbolpl@gmail.com"
+          href="mailto:jerichobantiquete@gmail.com"
           target="https://wa.me/15551234567"
           rel="noopener noreferrer"
         >
           Gm
         </MobileSocial>
         <MobileSocial
-          href="https://github.com/elcbolpl"
+          href="https://github.com/monciego"
           target="_blank"
           rel="noopener noreferrer"
         >

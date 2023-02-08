@@ -1,3 +1,4 @@
+import React from "react";
 import { StyledButton } from "../styles/Button.styled";
 import {
   Name,
@@ -15,12 +16,12 @@ import { IconContext } from "react-icons";
 import { GrLinkedinOption } from "react-icons/gr";
 import { GoMarkGithub } from "react-icons/go";
 import { FaEnvelope } from "react-icons/fa";
-// import { countdown } from "../Form/countdown";
-// import { transform } from "framer-motion/";
+import CountdownTimer from '../Clock/CountdownTimer';
 
 const Home = () => {
-
-
+  const THREE_DAYS_IN_MS = 205 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
   return (
     <IconContext.Provider value={{ size: "1rem" }}>
       <StyledHome id="home">
@@ -89,11 +90,11 @@ const Home = () => {
             <GrLinkedinOption />
           </Social>
         </Socials>
-                
+        
+          <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+        
       </StyledHome>
-      
     </IconContext.Provider>
-    
   );
 };
 
