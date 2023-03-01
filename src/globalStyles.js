@@ -29,9 +29,31 @@ export const Heading = styled.h2`
 	margin-bottom: 1.4rem;
 	font-size: 3rem;
 	text-align: center;
+	font-family: Winterland Slant;
 	line-height: 1.1;
 	font-weight: 600;
 	color: ${({ lightText }) => (lightText ? '#f7f8fa' : '1c2237')};
+`;
+
+export const HeadingWedding = styled.h2`
+	margin-bottom: 35rem;
+	font-size: 3rem;
+	text-align: center;
+	font-family: Weddingday Personal Use;
+	line-height: 1.1;
+	font-weight: 600;
+	color: ${({ lightText }) => (lightText ? '#f4433666' : '#f4433666')};
+`;
+
+export const HeadingHora = styled.h1`
+	margin-bottom: 35rem;
+	margin-left: 1rem;
+	font-size: 2.5rem;
+	text-align: center;
+	font-family: Winterland;
+	line-height: 1.1;
+	font-weight: 900;
+	color: ${({ lightText }) => (lightText ? 'rgba(1,1,1,0.5)' : 'rgba(1,1,1,0.5)')};
 `;
 
 export default GlobalStyle;
