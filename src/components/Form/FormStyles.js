@@ -79,7 +79,7 @@ export const FormButton = styled.button`
 
 export const FormMessage = styled(motion.div)`
 	color: ${({ error }) => (error ? 'red' : 'green')};
-	padding: 5px;
+	padding: 1px;
 	text-align: center;
 	margin-top: 1rem;
 `;

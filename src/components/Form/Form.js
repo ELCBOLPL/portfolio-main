@@ -1,81 +1,75 @@
-import styled from "styled-components";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useEffect, useState } from "react"
+import InputField from "./InputField"
+import SelectField from "./SelectField";
+import TextareaField from "./TextareaField";
+import { ChevronRightIcon } from '@heroicons/react/solid'
+import emailjs from 'emailjs-com';
+import "../../index.css"
 
- const Contact = () => {
-	const form = useRef();
-  
-	const sendEmail = (e) => {
-	  e.preventDefault();
-  
-	  emailjs.sendForm('service_ybx1o66', 'template_yu9gtba', form.current, 'zJg6GTUEVaeqSrV_7')
-		.then((result) => {
-			console.log(result.text);
-			console.log("message sent")
-		}, (error) => {
-			console.log(error.text);
-		});
-	};
 
-	return <StyledContactForm>
-	  <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-	  </form>
-	</StyledContactForm>
+const ContactForm = () => {
+  const [values, setValues] = useState({
+    fullname: '',
+    email: '',
+    cantidad: '',
+    message: ''
+  });
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.send('service_rtmk88c', 'template_b3jiw9e', values, 'Od40H_FJw5kN5boM3')
+      .then(response => {
+        console.log('SUCCESS!', response);
+        setValues({
+          fullname: '',
+          email: '',
+          cantidad: '',
+          message: ''
+        });
+        setStatus('SUCCESS');
+      }, error => {
+        console.log('FAILED...', error);
+      });
+  }
+
+  useEffect(() => {
+    if(status === 'SUCCESS') {
+      setTimeout(() => {
+        setStatus('');
+      }, 3000);
+    }
+  }, [status]);
+
+  const handleChange = (e) => {
+    setValues(values => ({
+      ...values,
+      [e.target.name]: e.target.value
+    }))
+  }
+  return (
+    <div className="lg:mt-180 lg:mr-50 pt-6 pb-8 bg-white shadow-xl rounded p-5">
+      {status && renderAlert()}
+      <form onSubmit={handleSubmit}>
+        <h3 className="text-gray-400 mt-0 mb-0 text-xl font-semibold">Confirma Asistencia</h3>
+        <InputField value={values.fullName} handleChange={handleChange} label="Nombre" name="fullname" type="fullname" placeholder="John Doe" />
+        <InputField value={values.email} handleChange={handleChange} label="E-Mail" name="email" type="email" />
+        <SelectField handleChange={handleChange} name="cantidad" label="Cantidad que asistiran " type="cantidad" value={values.cantidad}/>
+        <TextareaField value={values.message} handleChange={handleChange} label="Registra tu Confirmacion de asistencia" name="message" placeholder="Asistiremos(cantidad) personas con este registro"/>
+        <button type="submit"
+          className="mt-4 bg-gray-900 text-gray-200 rounded hover:bg-gray-700 px-4 py-2 focus:outline-none"
+        >Enviar <ChevronRightIcon className="w-6 ml-2 float-right" />
+        </button>
+      </form>
+      </div>
+
+  )
 }
 
-export default Contact;
+const renderAlert = () => (
+  <div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100 rounded mb-5 text-center">
+    <p>El mensaje se a enviado satisfactoriamente</p>
+  </div>
+)
 
-// Styles
-const StyledContactForm = styled.div`
-  width: 600px;
-  form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 100px;
-    font-size: 16px;
-    input {
-      width: 100%;
-      height: 35px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    textarea {
-      max-width: 100%;
-      min-width: 100%;
-      width: 100%;
-      max-height: 100px;
-      min-height: 100px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    label {
-      margin-top: 1rem;
-    }
-    input[type="submit"] {
-      margin-top: 2rem;
-      cursor: pointer;
-      background: rgb(249, 105, 14);
-      color: white;
-      border: none;
-    }
-  }
-`;
+export default ContactForm
