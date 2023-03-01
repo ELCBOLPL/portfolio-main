@@ -16,15 +16,31 @@ export const MobileMenuContainer = styled.div`
   transition: 0.3s ease;
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.button`
   position: absolute;
   top: 3rem;
+  color:  #000;;
   right: 3rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
 `;
+
+const ButtonIconExpand = () => {
+  return <div className="icon icon-expand"> <i className="fa fa-bars"></i></div>
+ };
+ const ExpandIconDisplay = styled(ButtonIconExpand)`
+ position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+   `;
+ 
+ export {ExpandIconDisplay}
 
 export const CloseIcon = styled(closeIcon)`
   cursor: pointer;
@@ -42,6 +58,7 @@ export const MobileMenuList = styled.ul`
   height: 100%;
   gap: 2rem;
 `;
+
 
 export const MobileMenuLink = styled(MobileMenuNavLink)`
   font-family: ${({ theme }) => theme.fonts.cardo};

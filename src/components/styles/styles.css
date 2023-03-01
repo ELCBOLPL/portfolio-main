@@ -41,9 +41,12 @@
 	 background-repeat: no-repeat;
 	 user-select: none;
 }
-  
+@font-face {
+  font-family: myFirstFont;
+  src: url(../src/assets/letter01.otf) format;
+}
   .App {
-    font-family: sans-serif;
+    font-family: myFirstFont;
     text-align: center;
   }
   

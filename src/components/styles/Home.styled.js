@@ -20,7 +20,8 @@ export const StyledHome = styled.section`
 
 
 export const Name = styled.h2`
-  font-size: 2.1875rem;
+  font-size: 5rem;
+  font-family: Taniya Script;
   position: relative;
   color: #fff9f9;
 
@@ -34,8 +35,9 @@ export const Name = styled.h2`
 `;
 
 export const Title = styled.h1`
-  font-size: 3.375rem;
+  font-size: 8.375rem;
   font-weight: 700;
+  font-family: Billion Reach Demo;
   margin: 0.5rem 0 1rem 0;
   color: #f7f7f7;
 

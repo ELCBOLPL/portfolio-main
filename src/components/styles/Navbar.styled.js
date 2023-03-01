@@ -9,11 +9,18 @@ export const StyledNavbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 7.5625rem;
+  height: 3.5625rem;
   padding: 0 5rem;
   transition: 0.5s ease-in-out;
   z-index: 999;
   color: #fff;
+    /* background: orangered;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem calc((100vw - 1000px) / 2);
+    z-index: 12; */
 
   &.sticky {
     position: fixed;
@@ -173,6 +180,13 @@ export const Menu = styled.div`
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     display: block;
   }
+  /* display: flex;
+  align-items: center;
+  margin-right: -24px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  } */
 `;
 
 export const Line = styled.div`
