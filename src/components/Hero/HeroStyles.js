@@ -112,6 +112,7 @@ export const Heading = styled.h1`
 export const HeroText = styled.div`
 	text-align: center;
 	font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+	background-color: rgba(255, 255, 255);
 	/* margin-bottom: 1.3rem; */
 `;
 
@@ -131,7 +132,7 @@ export const ButtonWrapper = styled.div`
 
 export const HeroButton = styled(motion.button)`
 	position: absolute;
-	width: 250px;
+	width: 150px;
 	margin: 0 auto;
 	padding: 15px 20px;
 	bottom: calc(100vh - 100px);
@@ -147,7 +148,7 @@ export const HeroButton = styled(motion.button)`
 	background-color: white;
 	color: #5238b1;
 	cursor: pointer;
-	transition: all 0.4s ease-in;
+	/* transition: all 0.4s ease-in; */
 
 	&.corner {
 		position: fixed;
@@ -162,6 +163,6 @@ export const HeroButton = styled(motion.button)`
 
 	&:hover {
 		box-shadow: 0 0 9px 9px #5238b1;
-		transition: box-shadow 0.3s ease-in;
+		/* transition: box-shadow 0.3s ease-in; */
 	}
 `;

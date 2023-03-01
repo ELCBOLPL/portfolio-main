@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FiMail } from 'react-icons/fi';
+import { FiMail,FiVolume} from 'react-icons/fi';
 import {
 	HeroSection,
 	Heading,
@@ -14,6 +14,7 @@ import {
 } from './HeroStyles';
 import { useInView } from 'react-intersection-observer';
 import Modal from '../Modal/Modal';
+import { SectionTitleNosotros } from '../styles/SectionHeading';
 // import image1 from "../../assets/hero-pattern-bg-lg.png";
 // import image2 from "../../assets/reuso.png"
 // import image3 from "../../assets/tambo3.png"
@@ -76,10 +77,9 @@ const Hero = () => {
 					/>
 				</CharacterContainer>
 				<HeroContent>
-					<Heading>No olvides enviar mensaje </Heading>
+					<SectionTitleNosotros>No olvides enviar mensaje </SectionTitleNosotros>
 					<HeroText>
-						Si deseas enviar un correo a nuestro correo electrónico
-						dar click en el botón Confirmar asistencia o da click en el icono rosa en la esquina.
+						Confirmar asistencia a nuestra Boda.
 					</HeroText>
 					<ButtonContainer ref={ref}>
 						<ButtonWrapper>
@@ -87,9 +87,11 @@ const Hero = () => {
 							className={inView ? '' : 'corner'}>
 								{inView ? (
 									<> Confirmar Asistencia</>
-								) : (
-									<FiMail color="white" size="2.3rem" />
-								)}
+								) 
+								:( 
+								<FiMail color="white" size="2.3rem" /> 
+								 ) 
+								}
 							</HeroButton>
 						</ButtonWrapper>
 					</ButtonContainer>
