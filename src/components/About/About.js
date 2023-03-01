@@ -6,7 +6,7 @@ import {
   AboutImageContainer,
   StyledAbout,
 } from "../styles/About.styled";
-import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
+import { SectionHeading, SectionTitle, SectionTitleNosotros } from "../styles/SectionHeading";
 import { StyledParagraph } from "../styles/Typography.styled";
 import myImage from "../../assets/invita2.png";
 // import downloadIcon from "../../assets/icons/download-icon.svg";
@@ -16,18 +16,18 @@ const Nosotros = () => {
   return (
     <StyledAbout id="about">
       <SectionHeading dark="true" mb="3rem">
-        <SectionTitle dark="true">
+        <SectionTitleNosotros dark="true">
           Nosotros
-        </SectionTitle>
+        </SectionTitleNosotros>
       </SectionHeading>
       <AboutContent>
         <AboutImageContainer>
           <AboutImage src={myImage} />
         </AboutImageContainer>
         <AboutDetailsContainer>
-          <StyledParagraph>
-          Estamos invitando a asistir a nuestros eventos 
-          </StyledParagraph>
+          <SectionTitleNosotros>
+          Estamos invitando asistir a nuestros eventos 
+          </SectionTitleNosotros>
          
         </AboutDetailsContainer>
       </AboutContent>
