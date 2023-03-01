@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import { Background, CloseModalButton, ModalWrapper } from './ModalStyles';
 import Form from '../Form/Form';
 
+
 const Modal = ({ showModal, setShowModal }) => {
 	const modalRef = useRef();
 
@@ -84,7 +85,7 @@ const Modal = ({ showModal, setShowModal }) => {
 						}}
 					>
 						<Form></Form>
-						<CloseModalButton aria-label="Close modal" onClick={() => setShowModal(prev => !prev)} />
+					<CloseModalButton aria-label="Close modal" onClick={() => setShowModal(prev => !prev)} />
 					</ModalWrapper>
 				</Background>
 			): null}

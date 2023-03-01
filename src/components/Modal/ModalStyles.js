@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export const Background = styled(motion.div)`
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.8);
+	background: #f4433666;
 	top: 0;
 	left: 0;
 	position: fixed;
@@ -17,10 +17,12 @@ export const Background = styled(motion.div)`
 
 export const ModalWrapper = styled(motion.div)`
 	width: clamp(200px, 90vw, 500px);
-	height: 90vh;
+	height: 75vh;
+	/* bottom: 1vh; */
+
 	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
 	background: #fff;
-	color: #000;
+	color: rgba(55, 55,55, 0.8);
 	display: flex;
 	position: relative;
 	overflow: scroll;
@@ -31,10 +33,10 @@ export const ModalWrapper = styled(motion.div)`
 export const CloseModalButton = styled(MdClose)`
 	cursor: pointer;
 	position: absolute;
-	top: 0px;
-	right: 30px;
-	width: 32px;
+	top: 20px;
+	left: 400px;
+	width: 52px;
 	height: 42px;
-	padding: 0;
-	z-index: 10;
+	padding: 10;
+	z-index: 9;
 `;
