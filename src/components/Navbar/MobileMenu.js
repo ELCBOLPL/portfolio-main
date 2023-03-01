@@ -1,4 +1,6 @@
 import React from "react";
+ import '../../App.css'
+
 import {
   CloseIcon,
   Icon,
@@ -10,6 +12,8 @@ import {
   MobileSocial,
   MobileQuote,
   CloseText,
+  ExpandIconDisplay,
+  // ExpandIconDisplay,
 } from "../styles/MobileMenu.styled";
 
 const MobileMenu = ({ isOpen, toggle }) => {
@@ -21,19 +25,21 @@ const MobileMenu = ({ isOpen, toggle }) => {
       </Icon>
       <MobileMenuList>
         <MobileMenuLink to="home" onClick={toggle}>
-          Home
+          Inicio
         </MobileMenuLink>
         <MobileMenuLink to="projects" onClick={toggle}>
-          Projects
+          Ubicaciones
+
         </MobileMenuLink>
         <MobileMenuLink to="about" onClick={toggle}>
-          About
+          Nosotros
+
         </MobileMenuLink>
         {/* <MobileMenuLink to="playground" onClick={toggle}>
           Playground
         </MobileMenuLink> */}
         <MobileButton
-          href="mailto:jerichobantiquete@gmail.com "
+          href="mailto:elcbolpl@gmail.com "
           target="_blank"
           rel="noreferrer"
         >

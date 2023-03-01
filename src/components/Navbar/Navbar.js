@@ -9,9 +9,11 @@ import {
   StyledNavbar,
   StyledNavLinks,
 } from "../styles/Navbar.styled";
+import '../../App.css'
 import logo from "../../assets/logo.svg";
 import { animateScroll as scroll } from "react-scroll";
 import MobileMenu from "./MobileMenu";
+import { ExpandIconDisplay } from "../styles/MobileMenu.styled";
 
 const Navbar = () => {
   const [stickyNav, setStickyNav] = useState(false);
@@ -122,9 +124,11 @@ const Navbar = () => {
       </StyledCTA>
 
       <Menu onClick={toggle}>
-        <Line width="1.5rem" />
-        <Line />
-        <Line width="1.5rem" ml="0.5rem" />
+        {/* <Line/>
+        <Line width="1.5rem"/>
+        <Line width="1.5rem"  ml="0.5rem" /> */}
+        <ExpandIconDisplay classname="icon icon-fill"/>
+        
       </Menu>
 
       <MobileMenu isOpen={isOpen} toggle={toggle}></MobileMenu>
