@@ -16,25 +16,23 @@ import { IconContext } from "react-icons";
 import { GrLinkedinOption } from "react-icons/gr";
 import { GoMarkGithub } from "react-icons/go";
 import { FaEnvelope } from "react-icons/fa";
-import CountdownTimer from '../Clock/CountdownTimer';
+
 
 const Home = () => {
-  const THREE_DAYS_IN_MS = 205 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
   return (
     <IconContext.Provider value={{ size: "1rem" }}>
       <StyledHome id="home">
-        <Name>Acompañanos a nuestra Boda</Name>
-        <Title>IVAN Y CAROLAIN</Title>
-        <p className="responsive">
+      
+        <Name>Asiste a nuestra Boda</Name>
+        <Title>Ivan Y Carolain</Title>
+        {/* <p className="responsive">
           Te mostramos <span className="change-text"></span>{" "}
           <span className="responsive">F</span>
           <span className="responsive">o</span>
           <span className="responsive">t</span>
           <span className="responsive">o</span>
           <span className="responsive">s</span>
-        </p>
+        </p> */}
         <StyledButtonsContainer>
           <StyledButton
             icon={projectIcon}
@@ -91,7 +89,7 @@ const Home = () => {
           </Social>
         </Socials>
         
-          <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+          {/* <CountdownTimer targetDate={dateTimeAfterThreeDays} /> */}
         
       </StyledHome>
     </IconContext.Provider>
