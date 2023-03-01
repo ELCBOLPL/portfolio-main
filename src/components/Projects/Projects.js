@@ -13,6 +13,7 @@ const Productos = () => {
       </SectionHeading>
       <SectionHeading>
       <SectionTitle dark="true" style={{fontSize:"25px"}}>
+        
         Visualiza la direccion de la Iglesia.
         </SectionTitle>
       </SectionHeading>
@@ -21,7 +22,8 @@ const Productos = () => {
       
       <SectionHeading dark="true" textAlign="center">
       <SectionTitle dark="true" style={{fontSize:"25px"}}>
-      
+      <br></br>
+      <br></br>
         Visualiza la direccion del Salon.
         </SectionTitle>
       </SectionHeading>
