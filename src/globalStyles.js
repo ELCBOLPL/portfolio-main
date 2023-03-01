@@ -47,8 +47,7 @@ export const HeadingWedding = styled.h2`
 
 export const HeadingHora = styled.h1`
 	margin-bottom: 35rem;
-	margin-left: 1rem;
-	font-size: 2.5rem;
+	font-size: 1rem;
 	text-align: center;
 	font-family: Winterland;
 	line-height: 1.1;
