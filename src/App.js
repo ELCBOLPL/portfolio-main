@@ -17,16 +17,12 @@ import Hero from "./components/Hero/Hero";
 // import CountdownTimer from './components/Clock/CountdownTimer';
 import './App.css';
 import SliderV1 from "./components/SliderV1";
-import ContactForm from "./components/Contact/ContactForm";
-import { FaMusic } from "react-icons/fa";
-import Image1 from "../src/assets/miboda33.png";
-
 
 import Confetti from "./components/hooks/Confetti";
-import styledComponents from 'styled-components';
-import { Background } from "./components/Modal/ModalStyles";
-import { MdOpacity } from "react-icons/md";
-import GlobalStyle, { Heading ,HeadingWedding,HeadingHora} from "./globalStyles";
+
+import  { Heading ,HeadingWedding,HeadingHora, RainbowText} from "./globalStyles";
+import reactIcons from 'react-icons';
+
 
 function App() {
   return (
@@ -43,10 +39,10 @@ function App() {
             <section className ="  flex flex-col justify-center relative lg:min-h-[100vh] bg-gray-100 dark:bg-gray-900 pt-8 px-8 lg:overflow-hidden bg-hero-pattern bg-repeat-x bg-cover scales bg-blend-multiply dark:bg-blend-color-burn">
             {/* <div class="container relative lg:min-h-[100vh] flex flex-col lg:flex-row lg:items-center mx-auto max-w-screen-xl z-10 -mb-16"> */}
             <div>
-            <Heading>IVAN Y CAROLAIN</Heading>
-            <HeadingWedding>Itinerario de boda
-            <HeadingHora>5:00 - 5:45 P.M Ceremonia
-            <HeadingHora>6:00 - 7:00 P.M Hora de Cocteles
+            <RainbowText> Ivan y Carolain</RainbowText>
+            <HeadingWedding>×º°”˜`”°º×   🎀  𝐼𝓉𝒾𝓃𝑒𝓇𝒶𝓇𝒾❀ 𝒹𝑒 𝐵💞𝒹𝒶  🎀   ×º°”`˜”°º×
+            <HeadingHora>✧✩  🎀  𝟧:00 - 𝟧:𝟦𝟧 𝒫.𝑀 𝒞𝑒𝓇𝑒𝓂❁𝓃𝒾𝒶  🎀  ✩✧
+            <HeadingHora>6:00 - 7:00 ☆Hora de Cócteles☆
             <HeadingHora>700 -  7:15 P.M Los Invitados van a Cenar
             <HeadingHora>7:15 - 7:25 P.M Intro a la Fiesta Nupcial 
             <HeadingHora>7:25 - 7:30 P.M Primer Baile          
