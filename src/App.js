@@ -1,3 +1,4 @@
+
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 // import { MapContainer,TileLayer} from 'react-leaflet';
@@ -22,6 +23,7 @@ import Confetti from "./components/hooks/Confetti";
 
 import  { Heading ,HeadingWedding,HeadingHora, RainbowText} from "./globalStyles";
 import reactIcons from 'react-icons';
+import ContactForm from "./components/Form/Form";
 
 
 function App() {
@@ -88,7 +90,7 @@ function App() {
             <Projects />
             {/* <div className="h-screen"> */}
       
-        {/* <ContactForm /> */}
+         <ContactForm /> 
       {/* </div> */}
             <About />
             <ParallaxComponent />
