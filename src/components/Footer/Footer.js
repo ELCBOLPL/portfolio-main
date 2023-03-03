@@ -32,10 +32,10 @@ const Footer = () => {
 
       <FooterBigLinkContainer>
         <FooterBigLink
-          href="mailto:jerichobantiquete@gmail.com"
-          data-hover="Let's talk!"
+          href="elcbolpl@gmail.com"
+          data-hover="Vamos Hablar!"
         >
-          Necesitas cotizar con nosotros?
+          Necesitas Cotizar Con Nosotros?
         </FooterBigLink>
       </FooterBigLinkContainer>
       <FooterContacts>
