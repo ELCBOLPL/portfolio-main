@@ -16,7 +16,7 @@ import ParallaxComponent from "./components/Parallax/Parallax";
 import Technologies from "./components/Technologies/Technologies";
 import Hero from "./components/Hero/Hero";
 // import CountdownTimer from './components/Clock/CountdownTimer';
-import './App.css';
+// import './App.css';
 import SliderV1 from "./components/SliderV1";
 
 import Confetti from "./components/hooks/Confetti";
