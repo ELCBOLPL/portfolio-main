@@ -57,8 +57,8 @@ const ContactForm = () => {
         <SelectField handleChange={handleChange} name="cantidad" label="Cantidad que asistiran " type="cantidad" value={values.cantidad}/>
         <TextareaField value={values.message} handleChange={handleChange} label="Registra tu Confirmacion de asistencia" name="message" placeholder="Asistiremos(cantidad) personas con este registro"/>
         <button type="submit"
-          className="mt-4 bg-gray-900 text-gray-200 rounded hover:bg-gray-700 px-4 py-2 focus:outline-none"
-        >Enviar <ChevronRightIcon className="w-6 ml-2 float-right" />
+          className="mt-4 bg-gray-900 text-gray-200 rounded hover:bg-gray-700 px-4 py-2 focus:outline-none">
+          Enviar <ChevronRightIcon className="w-6 ml-2 float-right" />
         </button>
       </form>
       </div>
