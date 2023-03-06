@@ -16,14 +16,14 @@ import ParallaxComponent from "./components/Parallax/Parallax";
 import Technologies from "./components/Technologies/Technologies";
 import Hero from "./components/Hero/Hero";
 // import CountdownTimer from './components/Clock/CountdownTimer';
-// import './App.css';
+import './App.css';
 import SliderV1 from "./components/SliderV1";
 
 import Confetti from "./components/hooks/Confetti";
 
 import  { Heading ,HeadingWedding,HeadingHora, RainbowText} from "./globalStyles";
 import reactIcons from 'react-icons';
-import ContactForm from "./components/Form/Form";
+
 
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
             <div>
             <RainbowText> Ivan y Carolain</RainbowText>
             <HeadingWedding>×º°”˜`”°º×   🎀  𝐼𝓉𝒾𝓃𝑒𝓇𝒶𝓇𝒾❀ 𝒹𝑒 𝐵💞𝒹𝒶  🎀   ×º°”`˜”°º×
-            <HeadingHora>✧✩  🎀  𝟧:00 - 𝟧:𝟦𝟧 𝒫.𝑀 𝒞𝑒𝓇𝑒𝓂❁𝓃𝒾𝒶  🎀  ✩✧
+            <RainbowText>✧✩✩✩✩✩  🎀  𝟧:00 - 𝟧:𝟦𝟧 𝒫.𝑀 𝒞𝑒𝓇𝑒𝓂❁𝓃𝒾𝒶  🎀  ✩✧✧✧✧✧</RainbowText>
             <HeadingHora>6:00 - 7:00 ☆Hora de Cócteles☆
             <HeadingHora>700 -  7:15 P.M Los Invitados van a Cenar
             <HeadingHora>7:15 - 7:25 P.M Intro a la Fiesta Nupcial 
@@ -64,7 +64,7 @@ function App() {
             </HeadingHora>
             </HeadingHora>
             </HeadingHora>
-            </HeadingHora>
+            
               </HeadingWedding>
 
            
@@ -90,7 +90,7 @@ function App() {
             <Projects />
             {/* <div className="h-screen"> */}
       
-         <ContactForm /> 
+         {/* <ContactForm />  */}
       {/* </div> */}
             <About />
             <ParallaxComponent />
