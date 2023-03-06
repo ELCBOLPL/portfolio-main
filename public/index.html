@@ -79,7 +79,6 @@ crossorigin="anonymous">
       @media screen and (min-width: 601px) {
         div.example {
           font-size: 60px;
-          font-family: myFirstFont;
            background-color: #0d1a29;background-image: conic-gradient(#0d1a29, #0d1a29, #0d1a29); 
            position: right ;margin-top: 10px;font-size: 40px;
         color: #f1f1f1;
@@ -91,7 +90,19 @@ crossorigin="anonymous">
         div.example {
           background:#0d1a29;
           color: #fff;
-	        font-family: Winterland;
+	        @font-face {
+    font-family: 'my_fontregular';
+    src: url('placelover-webfont.eot');
+    src: url('placelover-webfont.eot?#iefix') format('embedded-opentype'),
+         url('placelover-webfont.woff2') format('woff2'),
+         url('placelover-webfont.woff') format('woff'),
+         url('placelover-webfont.ttf') format('truetype'),
+         url('placelover-webfont.svg#my_fontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+          font-family: my_fontregular; 
           font-size: 5vh;
 	        align-items: center;
 	        justify-content: center;
