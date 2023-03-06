@@ -14,11 +14,12 @@ import {
 } from './HeroStyles';
 import { useInView } from 'react-intersection-observer';
 import Modal from '../Modal/Modal';
-import { SectionTitleNosotros } from '../styles/SectionHeading';
+import { SectionTitle } from '../styles/SectionHeading';
 // import image1 from "../../assets/hero-pattern-bg-lg.png";
 // import image2 from "../../assets/reuso.png"
 // import image3 from "../../assets/tambo3.png"
 const Hero = () => {
+	
 	const [showModal, setShowModal] = useState(false);
 	const dragConstraints = { top: 0, bottom: 0, right: 0, left: 0 };
 
@@ -77,7 +78,8 @@ const Hero = () => {
 					/>
 				</CharacterContainer>
 				<HeroContent>
-					<SectionTitleNosotros>No olvides enviar mensaje </SectionTitleNosotros>
+				
+				<SectionTitle>No olvides enviar mensaje </SectionTitle>
 					<HeroText>
 						Confirmar asistencia a nuestra Boda.
 					</HeroText>

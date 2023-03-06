@@ -2,10 +2,13 @@ import styled from 'styled-components';
 import { Section } from '../../globalStyles';
 import { motion } from 'framer-motion';
 
+
+
 export const HeroSection = styled(Section)`
-	background-image: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
-	background-size: cover;
-	background-attachment: fixed;
+   background-image: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+	/* background: url(CARROUSEL.png) center; */
+	/* background-size: cover; */
+	/* background-attachment: fixed; */
 	z-index: 11;
 	align-items: center;
 	height: 640px;
@@ -98,6 +101,7 @@ export const HeroContent = styled.div`
 	padding: 0 15px;
 	z-index: 10;
 	position: relative;
+	
 `;
 
 export const Heading = styled.h1`

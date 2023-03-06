@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const StyledAbout = styled.section`
   
   color: ${({ theme }) => theme.color.lightGray};
+  background: url(RainbowStrokes1.png) left top no-repeat, url(RainbowStrokes2.png) right bottom no-repeat, url(RainbowStrokes4) right bottom no-repeat;
+  background-size: 80px 40PX, 1;
+  
 `;
 
 export const AboutContent = styled.div`
@@ -14,6 +17,8 @@ export const AboutContent = styled.div`
     flex-direction: column;
     margin-top: 0;
   }
+  background: url(RainbowStrokes1.png) left top no-repeat, url(RainbowStrokes2.png) right bottom no-repeat, url(RainbowStrokes4) right top no-repeat,
+  url(CARROUSEL1.png) left bottom no-repeat;
 `;
 
 export const AboutImageContainer = styled.div`
@@ -27,7 +32,8 @@ export const AboutImageContainer = styled.div`
     position: absolute;
     top: -1rem;
     left: -1rem;
-    background: #fcdf3e;
+    background: url(RainbowStrokes1.png) left top no-repeat, url(RainbowStrokes2.png) right bottom no-repeat, url(RainbowStrokes3.png) left bottom repeat,url(RainbowStrokes4) right top no-repeat;
+    background-size: 40PX 40PX, 40PX 100PX, 1;
     width: 100%;
     height: 100%;
     border-radius: 1px;
@@ -38,7 +44,8 @@ export const AboutImageContainer = styled.div`
     content: "";
     position: absolute;
     inset: 0 0 0 0;
-    background: rgb(13, 14, 14, 0.199);
+    background: url(RainbowStrokes1.png) left top no-repeat, url(RainbowStrokes2.png) right bottom no-repeat, url(RainbowStrokes4) right top no-repeat,
+  url(CARROUSEL1.png) left bottom no-repeat;
     z-index: 2;
   }
 
@@ -52,6 +59,8 @@ export const AboutImageContainer = styled.div`
       top: -0.5rem;
       left: -0.5rem;
     }
+    background: url(RainbowStrokes1.png) left top no-repeat, url(RainbowStrokes2.png) right bottom no-repeat, url(RainbowStrokes4) right top no-repeat,
+  url(CARROUSEL1.png) left bottom no-repeat;
   }
 `;
 
@@ -61,6 +70,8 @@ export const AboutImage = styled.img`
   object-fit: cover;
   position: relative;
   border-radius: 1px;
+  background: url(RainbowStrokes1.png) left top no-repeat, url(RainbowStrokes2.png) right bottom no-repeat, url(RainbowStrokes4) right top no-repeat,
+  url(CARROUSEL1.png) left bottom no-repeat;
 `;
 
 export const AboutDetailsContainer = styled.div`
@@ -70,6 +81,8 @@ export const AboutDetailsContainer = styled.div`
   @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 100%;
   }
+  background: url(RainbowStrokes1.png) left top no-repeat, url(RainbowStrokes2.png) right bottom no-repeat, url(RainbowStrokes4) right top no-repeat,
+  url(CARROUSEL1.png) left bottom no-repeat;
 `;
 
 export const Resume = styled.div`
