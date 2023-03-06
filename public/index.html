@@ -85,12 +85,8 @@ crossorigin="anonymous">
         text-transform: capitalize;
         }
       }
-      
-      @media screen and (max-width: 600px) {
-        div.example {
-          background:#0d1a29;
-          color: #fff;
-	        @font-face {
+
+      @font-face {
     font-family: 'my_fontregular';
     src: url('placelover-webfont.eot');
     src: url('placelover-webfont.eot?#iefix') format('embedded-opentype'),
@@ -102,6 +98,12 @@ crossorigin="anonymous">
     font-style: normal;
 
 }
+      
+      @media screen and (max-width: 600px) {
+        div.example {
+          background:#0d1a29;
+          color: #fff;
+	        
           font-family: my_fontregular; 
           font-size: 5vh;
 	        align-items: center;
