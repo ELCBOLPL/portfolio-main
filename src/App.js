@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer";
 // import { MapContainer,TileLayer} from 'react-leaflet';
 // import L from 'leaflet';
 import Home from "./components/Home/Home";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 // import "leaflet-control-geocoder/dist/Control.Geocoder.css";
 // import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 import Projects from "./components/Projects/Projects";
@@ -13,47 +13,65 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./components/styles/Theme";
 import { BrowserRouter as Router } from "react-router-dom";
 import ParallaxComponent from "./components/Parallax/Parallax";
-import Technologies from "./components/Technologies/Technologies";
 import Hero from "./components/Hero/Hero";
 // import CountdownTimer from './components/Clock/CountdownTimer';
 import './App.css';
 import SliderV1 from "./components/SliderV1";
+import  {HeadingHora} from "./globalStyles";
+import styled from "styled-components";
+import Countdown from "./components/countdown";
+import {
+	ButtonContainer,
+	HeroButton,
+	ButtonWrapper,
+} from './components/Hero/HeroStyles';
+const CardContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1f2229;
+  overflow: hidden;
+`;
 
-import Confetti from "./components/hooks/Confetti";
-
-import  { Heading ,HeadingWedding,HeadingHora, RainbowText} from "./globalStyles";
-import reactIcons from 'react-icons';
-
-
+const Separator = styled.span`
+  margin-left: 10px;
+  margin-right: 10px;
+`;
 
 function App() {
   return (
       <Router>
         <ThemeProvider theme={theme}>
           <>
-          
             <GlobalStyles />
-            <Navbar />
-            
-            <Confetti/>
-           
+            {/* <Navbar /> */}
             <Home />
-            <section className ="  flex flex-col justify-center relative lg:min-h-[100vh] bg-gray-100 dark:bg-gray-900 pt-8 px-8 lg:overflow-hidden bg-hero-pattern bg-repeat-x bg-cover scales bg-blend-multiply dark:bg-blend-color-burn">
+            
+      
+       
+       
+    
+       
+      
+            <section className ="  ">
             {/* <div class="container relative lg:min-h-[100vh] flex flex-col lg:flex-row lg:items-center mx-auto max-w-screen-xl z-10 -mb-16"> */}
             <div>
-            <RainbowText> Ivan y Carolain</RainbowText>
-            <HeadingWedding>×º°”˜`”°º×   🎀  𝐼𝓉𝒾𝓃𝑒𝓇𝒶𝓇𝒾❀ 𝒹𝑒 𝐵💞𝒹𝒶  🎀   ×º°”`˜”°º×
-            <RainbowText>✧✩✩✩✩✩  🎀  𝟧:00 - 𝟧:𝟦𝟧 𝒫.𝑀 𝒞𝑒𝓇𝑒𝓂❁𝓃𝒾𝒶  🎀  ✩✧✧✧✧✧</RainbowText>
-            <HeadingHora>6:00 - 7:00 ☆Hora de Cócteles☆
-            <HeadingHora>700 -  7:15 P.M Los Invitados van a Cenar
-            <HeadingHora>7:15 - 7:25 P.M Intro a la Fiesta Nupcial 
-            <HeadingHora>7:25 - 7:30 P.M Primer Baile          
-            <HeadingHora>7:30 - 7:50 P.M Brindis de Bienvenida    
-            <HeadingHora>8:15 - 9:00 P.M Primer plato y Brindis     
-            <HeadingHora>7:50 - 8:15 P.M Se sirve la entrada  
-            <HeadingHora>9:00 - 9:45 P.M Baile de Padre e Hija   
-            <HeadingHora>9:45 - 10:00 P.M Pastel + Agradecimientos
-            <HeadingHora>10:00 - 12:00  !Inicia el Baile!
+            
+            <HeadingHora>𝐼𝓉𝒾𝓃𝑒𝓇𝒶𝓇𝒾o 𝐵o𝒹𝒶  
+            <HeadingHora>5:00PM - 5:45 PM Ceremonía  
+            <HeadingHora>6:00PM- 7:00 Hora de Cócteles
+            <HeadingHora>700PM -  7:15 P.M Los Invitados van a Cenar
+            <HeadingHora>7:15PM - 7:25 P.M Intro a la Fiesta Nupcial 
+            <HeadingHora>7:25PM - 7:30 P.M Primer Baile          
+            <HeadingHora>7:30PM - 7:50 P.M Brindis de Bienvenida    
+            <HeadingHora>8:15PM - 9:00 P.M Primer plato y Brindis     
+            <HeadingHora>7:50PM - 8:15 P.M Se sirve la entrada  
+            <HeadingHora>9:00PM - 9:45 P.M Baile de Padre e Hija   
+            <HeadingHora>9:45PM - 10:00 P.M Pastel + Agradecimientos
+            <HeadingHora>10:00PM - 12:00  !Inicia el Baile!
+            </HeadingHora>
             </HeadingHora>
             </HeadingHora>
             </HeadingHora>
@@ -65,7 +83,7 @@ function App() {
             </HeadingHora>
             </HeadingHora>
             
-              </HeadingWedding>
+              </HeadingHora>
 
            
             
@@ -89,6 +107,24 @@ function App() {
     </MapContainer> */}
             <Projects />
             {/* <div className="h-screen"> */}
+            {/* <SectionHeading><SectionTitle>No olvides enviar mensaje </SectionTitle></SectionHeading> */}
+					<ButtonContainer >
+						<ButtonWrapper>
+							<HeroButton 
+            href="https://www.amazon.com.mx/wedding/registry/2QG3EIVYQLLTT?ref=wr_search_page_result_1"
+            target="https://www.amazon.com.mx/wedding/registry/2QG3EIVYQLLTT?ref=wr_search_page_result_1"
+            smooth={true}
+            duration={0}
+            delay={0}
+            spy={true}
+            spyThrottle={0}
+            exact="true"
+            offset={-50}
+          >
+            <span>Mesa de Regalos</span>
+							</HeroButton>
+						</ButtonWrapper>
+					</ButtonContainer>
       
          {/* <ContactForm />  */}
       {/* </div> */}
@@ -97,6 +133,7 @@ function App() {
             {/* <Technologies /> */}
             <Hero/>
             <SliderV1/>
+            <Countdown/>
 
             <Footer />
           </>

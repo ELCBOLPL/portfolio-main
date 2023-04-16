@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 
 
@@ -25,7 +25,7 @@ export const Section = styled.div`
 export const RainbowText = styled.text`
 
 margin-bottom: 1.4rem;
-	font-size: 3rem;
+	font-size: 5rem;
 	text-align: center;
 	line-height: 4.1;
 	font-weight: 800;
@@ -69,29 +69,31 @@ font-family: Somebody Else; */
 }
 font-family:  adventure_scriptregular;  */
 @font-face {
-    font-family: 'my_fontregular';
-    src: url('placelover-webfont.eot');
-    src: url('placelover-webfont.eot?#iefix') format('embedded-opentype'),
-         url('placelover-webfont.woff2') format('woff2'),
-         url('placelover-webfont.woff') format('woff'),
-         url('placelover-webfont.ttf') format('truetype'),
-         url('placelover-webfont.svg#my_fontregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'glitterine';
+    src: url('glitterine-webfont.eot');
+    src: url('glitterine-webfont.eot?#iefix') format('embedded-opentype'),
+         url('glitterine-webfont.woff2') format('woff2'),
+         url('glitterine-webfont.woff') format('woff'),
+         url('glitterine-webfont.ttf') format('truetype'),
+         url('glitterine-webfont.svg#my_fontregular') format('svg');
+   
 
 }
-font-family: my_fontregular; 
+font-family: glitterine;
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    font-size: 4.5rem;
+  }
 /* background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); */
 /* Create a conic gradient. */
 	/* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
 	background: #CA4246;
 	background-color: #CA4246;
 	background: conic-gradient(
-	  #CA4246 16.666%, 
-	  #E16541 16.666%, 
-	  #E16541 33.333%, 
-	  #F18F43 33.333%, 
-	  #F18F43 50%, 
+	  rgba(1,1,1,0.5) 16.666%, 
+	  rgba(1,1,1,0.5) 16.666%, 
+	  rgba(1,1,1,0.5) 33.333%, 
+	  rgba(1,1,1,0.5) 33.333%, 
+	  rgba(1,1,1,0.5) 50%, 
 	  #8B9862 50%, 
 	  #8B9862 66.666%, 
 	  #476098 66.666%, 
@@ -175,24 +177,27 @@ export const HeadingWedding = styled.h2`
 export const HeadingHora = styled.h2`
 
 	margin-bottom: 5rem;
-	font-size: 1rem;
+	font-size: 2rem;
 	text-align: center;
 	@font-face {
-    font-family: 'Nora_Love';
-    src: url('noralove-webfont.eot');
-    src: url('noralove-webfont.eot?#iefix') format('embedded-opentype'),
-         url('noralove-webfont.woff2') format('woff2'),
-         url('noralove-webfont.woff') format('woff'),
-         url('noralove-webfont.ttf') format('truetype'),
-         url('noralove-webfont.svg#my_fontregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'glitterine';
+    src: url('glitterine-webfont.eot');
+    src: url('glitterine-webfont.eot?#iefix') format('embedded-opentype'),
+         url('glitterine-webfont.woff2') format('woff2'),
+         url('glitterine-webfont.woff') format('woff'),
+         url('glitterine-webfont.ttf') format('truetype'),
+         url('glitterine-webfont.svg#my_fontregular') format('svg');
+   
 
 }
+font-family: glitterine;
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    font-size: 1.5rem;
+  }
 	line-height: 1.1;
 	font-weight: 300;
-	color: ${({ lightText }) => (lightText ? 'rgba(1,1,1,0.5)' : 'rgba(1,1,1,0.5)')};
-	font-family: Nora_Love
+	color: ${({ lightText }) => (lightText ? 'rgba(1,1,1,0.9)' : 'rgba(1,1,1,0.9)')};
+
 `;
 
 
