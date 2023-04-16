@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { Section } from '../../globalStyles';
 import { motion } from 'framer-motion';
+import images1 from "../../assets/sibelly7.jpg"
 
 
 
 export const HeroSection = styled(Section)`
-   background-image: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+   /* background-image: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb); */
+   /* background-image: conic-gradient( #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%); */
+	/* background-image: url(${images1}) !important; */
 	/* background: url(CARROUSEL.png) center; */
 	/* background-size: cover; */
 	/* background-attachment: fixed; */
@@ -134,11 +137,11 @@ export const ButtonWrapper = styled.div`
 	top: 0;
 `;
 
-export const HeroButton = styled(motion.button)`
+export const HeroButton = styled.a`
 	position: absolute;
 	width: 150px;
 	margin: 0 auto;
-	padding: 15px 20px;
+	padding: 16px 40px;
 	bottom: calc(100vh - 100px);
 	right: 50%;
 	transform: translate(50%);
@@ -147,12 +150,13 @@ export const HeroButton = styled(motion.button)`
 	line-height: 18px;
 	letter-spacing: 1.54px;
 	text-transform: uppercase;
-	border-radius: 25px;
+	border-radius: 6px;
 	border: none;
-	background-color: white;
-	color: #5238b1;
+	background-color: #ef265a;
+	color: #fff;
 	cursor: pointer;
-	/* transition: all 0.4s ease-in; */
+	transition: border-color .3s cubic-bezier(.215,.61,.355,1),color .3s cubic-bezier(.165,.84,.44,1),transform .3s cubic-bezier(.165,.84,.44,1),background-color .3s cubic-bezier(.165,.84,.44,1);
+
 
 	&.corner {
 		position: fixed;
@@ -166,7 +170,9 @@ export const HeroButton = styled(motion.button)`
 	}
 
 	&:hover {
-		box-shadow: 0 0 9px 9px #5238b1;
-		/* transition: box-shadow 0.3s ease-in; */
+	    box-shadow: 0 0 9px 9px #5238b1; 
+		background-color: #3898ec;
+    	border-color: #ef265a;
+    	/* transform: translateY(2px) */
 	}
 `;

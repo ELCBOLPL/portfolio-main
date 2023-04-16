@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imagen1 from "../../assets/banner-bg.png"
+import imagen1 from "../../assets/sibelly1.jpg"
 export const StyledHome = styled.section`
   background-image: url(${imagen1});
   display: flex;
@@ -7,7 +7,8 @@ export const StyledHome = styled.section`
   justify-content: center;
   padding: 0 1rem;
   height: 100vh;
-
+  background-size: cover; /* ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* centra la imagen vertical y horizontalmente */
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     align-items: center;
@@ -31,6 +32,21 @@ export const Name = styled.h2`
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
     font-size: 1.875rem;
+  }
+  @font-face {
+    font-family: 'glitterine';
+    src: url('glitterine-webfont.eot');
+    src: url('glitterine-webfont.eot?#iefix') format('embedded-opentype'),
+         url('glitterine-webfont.woff2') format('woff2'),
+         url('glitterine-webfont.woff') format('woff'),
+         url('glitterine-webfont.ttf') format('truetype'),
+         url('glitterine-webfont.svg#my_fontregular') format('svg');
+   
+
+}
+font-family: glitterine;
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    font-size: 4.5rem;
   }
 `;
 

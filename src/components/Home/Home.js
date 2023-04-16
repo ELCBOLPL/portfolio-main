@@ -1,8 +1,6 @@
 import React from "react";
-import { StyledButton } from "../styles/Button.styled";
+import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
 import {
-  Name,
-  StyledButtonsContainer,
   StyledHome,
   Title,
   Social,
@@ -23,71 +21,10 @@ const Home = () => {
     <IconContext.Provider value={{ size: "1rem" }}>
       <StyledHome id="home">
       
-        <Name>༺ᶰⓤ𝕖ŞＴⓡ𝒶 вｏⓓａ༻</Name>
-        <Title>Ivan y Carolain</Title>
-        {/* <p className="responsive">
-          Te mostramos <span className="change-text"></span>{" "}
-          <span className="responsive">F</span>
-          <span className="responsive">o</span>
-          <span className="responsive">t</span>
-          <span className="responsive">o</span>
-          <span className="responsive">s</span>
-        </p> */}
-        <StyledButtonsContainer>
-          <StyledButton
-            icon={projectIcon}
-            to="projects"
-            smooth={true}
-            duration={0}
-            delay={0}
-            spy={true}
-            spyThrottle={0}
-            exact="true"
-            offset={-50}
-          >
-            <span>Ubicaciones</span>
-          </StyledButton>
-          <StyledButton
-            icon={aboutIcon}
-            secondary="true"
-            content="B"
-            to="about"
-            smooth={true}
-            duration={0}
-            delay={0}
-            spy={true}
-            spyThrottle={0}
-            exact="true"
-            offset={-50}
-          >
-            <span>Nosotros</span>
-          </StyledButton>
-        </StyledButtonsContainer>
-        {/* <Line /> */}
+        <SectionHeading>
+        <Title>Carolain e Ivan</Title></SectionHeading>
         
-        <Socials>
-          <Social
-            href="mailto:jerichobantiquete@gmail.com"
-            target="https://wa.me/15551234567"
-            rel="noopener noreferrer"
-          >
-            <FaEnvelope />
-          </Social>
-          <Social
-            href="https://github.com/monciego"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GoMarkGithub />
-          </Social>
-          <Social
-            href="https://www.linkedin.com/in/jericho-bantiquete-450541179/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GrLinkedinOption />
-          </Social>
-        </Socials>
+     
         
           {/* <CountdownTimer targetDate={dateTimeAfterThreeDays} /> */}
         

@@ -50,62 +50,32 @@ margin-bottom: 1.4rem;
   margin-top: 1.5em;
   margin-top: calc(50vh - 1em);
 	color: ${({ lightText }) => (lightText ? 'rgba(1,1,1,0.5)' : 'rgba(1,1,1,0.5)')};
-	/* @font-face {
-    font-family: 'Gain Better';
-    src: url('GainBetter.eot');
-    src: url('GainBetter.eot?#iefix') format('embedded-opentype'),
-         url('GainBetter.woff2') format('woff2'),
-         url('GainBetter.woff') format('woff'),
-         url('GainBetter.ttf')  format('truetype'),
-         url('GainBetter.svg#Gain Better') format('svg');
-} */
-/* @font-face {
-    font-family: 'Somebody Else';
-    src: url('SomebodyElse.eot');
-    src: url('SomebodyElse.eot?#iefix') format('embedded-opentype'),
-         url('SomebodyElse.woff2') format('woff2'),
-         url('SomebodyElse.woff') format('woff'),
-         url('SomebodyElse.ttf')  format('truetype'),
-         url('SomebodyElse.svg#Somebody Else') format('svg');
-}
-font-family: Somebody Else; */
-/* @font-face {
-    font-family: 'adventure_scriptregular';
-    src: url('adventurescript-webfont.eot');
-    src: url('adventurescript-webfont.eot?#iefix') format('embedded-opentype'),
-         url('adventurescript-webfont.woff2') format('woff2'),
-         url('adventurescript-webfont.woff') format('woff'),
-         url('adventurescript-webfont.ttf') format('truetype'),
-         url('adventurescript-webfont.svg#adventure_scriptregular') format('svg');
-    font-weight: 100;
-    font-style: normal;
+	@font-face {
+    font-family: 'glitterine';
+    src: url('glitterine-webfont.eot');
+    src: url('glitterine-webfont.eot?#iefix') format('embedded-opentype'),
+         url('glitterine-webfont.woff2') format('woff2'),
+         url('glitterine-webfont.woff') format('woff'),
+         url('glitterine-webfont.ttf') format('truetype'),
+         url('glitterine-webfont.svg#my_fontregular') format('svg');
+   
 
 }
-font-family:  adventure_scriptregular;  */
-@font-face {
-    font-family: 'my_fontregular';
-    src: url('placelover-webfont.eot');
-    src: url('placelover-webfont.eot?#iefix') format('embedded-opentype'),
-         url('placelover-webfont.woff2') format('woff2'),
-         url('placelover-webfont.woff') format('woff'),
-         url('placelover-webfont.ttf') format('truetype'),
-         url('placelover-webfont.svg#my_fontregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-font-family: my_fontregular; 
+font-family: glitterine;
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    font-size: 4.5rem;
+  }
 /* background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); */
 /* Create a conic gradient. */
 	/* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-	background: url(CARROUSEL.png) 50% 50% no-repeat;
-	background-color: #f4433666;
+	background: rgba(1,1,1,0.9);
+	background-color: rgba(1,1,1,0.9);
 	background: conic-gradient(
-	  #f4433666 16.666%, 
-	  #E16541 16.666%, 
-	  #E16541 33.333%, 
-	  #F18F43 33.333%, 
-	  #F18F43 50%, 
+	  rgba(1,1,1,0.5) 16.666%, 
+	  rgba(1,1,1,0.5) 16.666%, 
+	  rgba(1,1,1,0.5) 33.333%, 
+	  rgba(1,1,1,0.5) 33.333%, 
+	  rgba(1,1,1,0.5) 50%, 
 	  #8B9862 50%, 
 	  #8B9862 66.666%, 
 	  #476098 66.666%, 
@@ -162,6 +132,5 @@ font-family: my_fontregular;
     background-position: 0 0;
   }
 }
-
 `
 	

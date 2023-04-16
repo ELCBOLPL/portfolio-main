@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { FiMail,FiVolume} from 'react-icons/fi';
+import { FiMail} from 'react-icons/fi';
 import {
 	HeroSection,
-	Heading,
 	HeroText,
 	ButtonContainer,
 	HeroButton,
@@ -14,7 +13,7 @@ import {
 } from './HeroStyles';
 import { useInView } from 'react-intersection-observer';
 import Modal from '../Modal/Modal';
-import { SectionTitle } from '../styles/SectionHeading';
+import { SectionHeading, SectionTitle } from '../styles/SectionHeading';
 // import image1 from "../../assets/hero-pattern-bg-lg.png";
 // import image2 from "../../assets/reuso.png"
 // import image3 from "../../assets/tambo3.png"
@@ -79,10 +78,7 @@ const Hero = () => {
 				</CharacterContainer>
 				<HeroContent>
 				
-				<SectionTitle>No olvides enviar mensaje </SectionTitle>
-					<HeroText>
-						Confirmar asistencia a nuestra Boda.
-					</HeroText>
+				<SectionHeading><SectionTitle>No olvides enviar mensaje </SectionTitle></SectionHeading>
 					<ButtonContainer ref={ref}>
 						<ButtonWrapper>
 							<HeroButton onClick={openModal}

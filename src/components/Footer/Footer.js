@@ -35,7 +35,7 @@ const Footer = () => {
           href="elcbolpl@gmail.com"
           data-hover="Vamos Hablar!"
         >
-          Necesitas Cotizar Con Nosotros?
+          Gracias por Visitar Nuestra Pagina
         </FooterBigLink>
       </FooterBigLinkContainer>
       <FooterContacts>

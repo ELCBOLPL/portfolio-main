@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link as Button } from "react-scroll";
+// import { Link as Button } from "react-scroll";
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled.a`
   box-shadow: none !important;
   border-radius: 0.1875rem;
   font-weight: 500;

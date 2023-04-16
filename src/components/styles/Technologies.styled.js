@@ -10,6 +10,10 @@ export const TechnologiesHeader = styled.h2`
   font-weight: 700;
 `;
 
+export const ourservices = styled.div`
+  margin-top:  50px;
+`;
+
 export const TechnologiesIcons = styled.div`
   display: flex;
   align-items: center;
